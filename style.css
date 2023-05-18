@@ -1,0 +1,161 @@
+:root {
+  --box-shadow: #ddd;
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --button-hover: #111;
+  --text-color: #111;
+  --font: arial, sans-serif;
+  --max-width: 750px;
+  --box-shadow: 0 2px 4px #0003, 0 15px 30px #0000001a;
+  --button-box-shadow: 0 2px 4px #00000030, 0 10px 20px #00000030;
+}
+
+html {
+  font-family: var(--font);
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  top: 0;
+  background-color: var(--white-color);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+p {
+  font-size: 0px;
+}
+
+.main {
+  max-width: 80%;
+  height: auto;
+  text-align: center;
+  margin: 80px auto;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.countdown {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.input {
+  margin: 10px 10px;
+  outline: 0;
+  padding: 10px 5px;
+  border-radius: 2px;
+  border: none;
+  text-indent: 5px;
+  box-shadow: var(--box-shadow);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  padding: 13px 0;
+  background-color: var(--gray-light-color);
+}
+
+.btns {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btns > * {
+  font-size: 18px;
+  padding: 6px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--black-color);
+  color: #7a8be7;
+}
+
+button:hover {
+  box-shadow: var(--button-box-shadow);
+}
+
+.container-inputs {
+  display: grid;
+  max-width: var(--max-width);
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 50px auto;
+}
+
+input {
+  background-color: var(--gray-light-color);
+}
+
+.message {
+  height: 5rem;
+  background-color: var(--white-color);
+  background-image: linear-gradient(90deg, #5db7ef, #c11ed3);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
